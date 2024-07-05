@@ -1,38 +1,30 @@
-.App {
-  text-align: center;
+@layer bulma, primereact;
+@import "bulma/css/bulma.css" layer(bulma);
+
+.border-1{
+    border: 1px solid var(--bulma-border);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.border-2{
+    border: 2px solid var(--bulma-border);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.border-3{
+    border: 3px solid var(--bulma-border);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.h-fullscreen{
+    height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.w-fullscreen{
+    width: 100vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.h-full{
+    height: 100%;
+}
+
+.w-full{
+    width: 100%;
 }
